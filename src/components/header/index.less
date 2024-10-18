@@ -1,0 +1,107 @@
+.header-wrap {
+    height: 78px;
+    padding: 22px 0 16px 0;
+    background: #010215;
+    font-size: 16px;
+    width: 100vw;
+    position: fixed;
+    z-index: 10000000;
+    &.nouser{
+        background: none;
+        position: absolute;
+        
+    }
+    .logo-wrap {
+        margin-left: 40px;
+        margin-top: -4px;
+        width: 300px;
+        height: 100%;
+        float: left;
+        background: url('../../assets/img/header-left.png') no-repeat;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .user-wrap {
+        float: right;
+        margin-right: 40px;
+        margin-top: -4px;
+        .ant-avatar {
+            vertical-align: top;
+        }
+        .nickname {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 14px;
+            max-width: 100px;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 40px;
+        }
+        i {
+            &:hover{
+                cursor: pointer;
+            }
+            color: #fff;
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: top;
+            line-height: 13px;
+            margin-top: 14px;
+        }
+    }
+    .header-nav-wrap {
+        float: right;
+        margin-top: -6px;
+        width: auto;
+        padding-right: 100px;
+        .ant-menu {
+            background: none; 
+            text-align: center;
+            .ant-menu-item {
+                padding: 0 61px;
+            }
+        }
+        .header-nav {
+            color:#fff;
+            font-size: 18px;
+        }
+        .ant-menu-item-selected, .ant-menu-item:hover {
+            background: none;
+            .header-nav {
+                color:#1E50F5;
+                cursor: pointer;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 64px;
+                    height: 4px;
+                    background-color: #1E50F5;
+                    border-radius: 2px;
+                    left: 50%;
+                    margin-left: -32px;
+                    bottom: -16px;
+                    transition: all .2s cubic-bezier(.18,.89,.17,.88),opacity .15s ease;
+                }
+            }
+        }
+    }
+}
+.logout-popover {
+    z-index: 10000001;
+    .ant-popover-inner-content {
+        padding: 12px 21px;
+    }
+    .logout-btn {
+        &:hover {
+            cursor: pointer;
+        }
+        width: 53px;
+        font-size: 13px;
+        color: #010215;
+        line-height: 32px;
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "jsx": "react",
+        "lib": [
+            "es2017",
+            "dom",
+            "es2018.promise"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "sourceMap": false,
+        "inlineSourceMap": true,
+        "moduleResolution": "node",
+        "inlineSources": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "types": [
+            "node"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@api/*": [
+                "./src/api/*"
+            ],
+            "@components/*": [
+                "./src/components/*"
+            ],
+            "@pages/*": [
+                "./src/pages/*"
+            ],
+            "@common/*": [
+                "./src/components/common/*"
+            ],
+            "@Header": [
+                "./src/components/header/Header.tsx"
+            ],
+            "@PrivateRoute": [
+                "src/components/common/HeaderMenuRoute.tsx"
+            ],
+            "@context/*": [
+                "./src/context/*"
+            ],
+            "@reducers/*": [
+                "./src/reducers/*"
+            ],
+            "@Routes": [
+                "./src/routes/Routes.tsx"
+            ],
+            "@assets/*": [
+                "./src/assets/*"
+            ],
+            "@Utils": [
+                "./src/util/utils.tsx"
+            ],
+            "@App": [
+                "./src/pages/App.tsx"
+            ],
+            "@config": [
+                "src/config.tsx"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

@@ -1,0 +1,20 @@
+@import './main.css';
+/* 自定义图标库 */
+@import './font-icon.css';
+
+@import '~antd/dist/antd.css';
+
+@import '~ant-design-pro/dist/ant-design-pro.css'; 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: PingFang SC,microsoft yahei,Avenir,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+

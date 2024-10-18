@@ -1,0 +1,120 @@
+.page-version {
+   height: auto;
+   padding: 3% 16%;
+   .upload-code {
+      margin-top: 20px;
+   }
+   .title-wrapper {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+      i {
+         position: absolute;
+         top: 0;
+         right: 0;
+      }
+      .title {
+         font-size: 40px;
+         color: #010215;
+         margin-bottom: 12px;
+      }
+      .desc {
+         font-size: 14px;
+         color: #7F7F85;
+      }
+      .error {
+         font-size: 16px;
+         color: #F27B7B;
+         margin: 12px 0;
+      }
+   }
+   .footer-wrapper {
+      .saveBtn {
+         margin-top: 40px;
+         margin-left: 140px;
+      }
+   }
+   .version-list-wrapper {
+      .version-content {
+         background: #FFFFFF;
+         border-radius: 5px;
+         padding: 20px 40px;
+         margin-bottom: 30px;
+         .header {
+            height: 40px;
+            line-height: 40px;
+            div {
+               display: inline-block;
+            }
+            .title {
+               font-size: 20px;
+               font-weight: bold;
+               color: #010215;
+            }
+            .buttons {
+               float: right;
+               button {
+               }
+            }
+            .empty-text {
+               float: right;
+               font-size: 14px;
+               color: #7F7F85;
+               .link {
+                  padding: 0 8px;
+               }
+            }
+         }
+         .content {
+            display: inline-block;
+            .qr-wrapper {
+               background: #F5F6FA;
+               padding: 16px 16px 8px 16px;
+               display: inline-block;
+               text-align: center;
+               border-radius: 5px;
+               margin: 10px 50px 10px 0;
+               .preview-tip {
+                  display: inline-block;
+                  font-size: 12px;
+                  color: #7F7F85;
+               }
+            }
+            .info-wrapper {
+               display: inline-block;
+               vertical-align: top;
+               margin-top: 22px;
+               .content-item {
+                  display: flex;
+                  .label {
+                     font-size: 16px;
+                     color: #888892;
+                     line-height: 32px;
+                     width: 90px;
+                  }
+                  .value {
+                     font-size: 16px;
+                     font-weight: bold;
+                     color: #010215;
+                     line-height: 32px;
+                     flex: auto;
+                  }
+               }
+            }
+         }
+      }
+   }
+   &.flow-create {
+      .version-content {
+         background: #F5F6FA;
+      }
+      .qr-wrapper { 
+         background: #fff !important;
+      }
+   }
+}
+.code-upload-form {
+   .ant-upload {
+      float: left;
+   }
+}

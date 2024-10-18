@@ -1,0 +1,98 @@
+.page-overview {
+    padding: 56px 14% 0 14%;
+    .overview-item {
+        width: 350px;
+        height: 280px;
+        display: inline-block;
+        margin: 0 20px 40px 20px;
+        background: #fff;
+        vertical-align: top;
+        &:hover {
+            cursor: pointer;
+        }
+        &:nth-child(1) {
+            .image-wapper {
+                background: #58DBB4;
+            }
+        }
+        &:nth-child(2) {
+            .image-wapper {
+                background: #EDB367;
+            }
+        }
+        &:nth-child(3) {
+            .image-wapper {
+                background: #449FEA;
+            }
+        }
+        &:nth-child(4) {
+            .image-wapper {
+                background: #ED736C;
+            }
+        }
+        &:nth-child(5) {
+            .image-wapper {
+                background: #3CCDDC;
+            }
+        }
+        &:nth-child(6) {
+            .image-wapper {
+                background: #A382E4;
+            }
+        }
+        .image-wapper {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-wapper {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    font-size: 40px;
+                    color: #fff;
+                    &::before {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .content {
+            padding: 0 30px;
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+                color: #010215;
+                margin: 20px 0 16px 0;
+            }
+            .desc {
+                font-size: 14px;
+                color: #888892;
+            }
+            .download {
+                .download-item + .download-item {
+                    margin-left: 24px;
+                }
+                .download-item {
+                    vertical-align: middle;
+                    display: inline-block;
+                    &:nth-child(1) .link {
+                        color:#B7B8BD;
+                    }
+                    &:nth-child(2) .link {
+                        color:#449FEA;
+                    }
+                    i {
+                        font-size: 21px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

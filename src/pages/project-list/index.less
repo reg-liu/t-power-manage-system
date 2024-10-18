@@ -1,0 +1,113 @@
+.page-project-list {
+    padding: 3% 16%;
+    .tool-wrapper {
+        .saveBtn {
+            float: right;
+            margin: 0;
+        }
+        .info-wrapper {
+            color: #010215;
+            font-size: 28px;
+            line-height: 50px;
+            display: inline-block;
+            .auth-wrapper {
+
+            }
+            .unauth-wrapper {
+                span {
+
+                }
+                a {
+
+                }
+            }
+        }
+    }
+    .expand {
+        color: #000;
+        text-decoration: underline;
+        padding-top: 40px;
+        clear: both;
+    }
+    .list-wrapper {
+        .list-item {
+            width: 630px;
+            height: 200px;
+            float: left;
+            background: #FFFFFF;
+            border-radius: 5px;
+            margin: 40px 0 0 0;
+            display: flex;
+            padding: 40px 35px;
+            &:nth-child(odd) {
+                margin-right: 40px;
+            }
+            .ant-avatar {
+                border-radius: 5px;
+                border: 1px solid #edeff2;
+            }
+            .project-info {
+                margin-left: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
+                .project-name {
+                    width: 420px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-top: 8px;
+                    font-weight: bold;
+                    color: #010215;
+                    margin: 6px 0 12px 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    span {
+                        vertical-align: top;
+                    }
+                    .status-label {
+                        margin: 0 10px;
+                    }
+                }
+                .content-wrapper {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 14px;
+                    margin: 12px 0;
+                    &.project-detail {
+                       color: #323336;
+                    }
+                    &.category-wrapper {
+                       margin-top: 8px;
+                       & > span {
+                           vertical-align: top;
+                       }
+                       .category-item {
+                          display: inline-block;
+                          text-align: center;
+                          &:not(:last-child):after {
+                              content: '|';
+                              width: 16px;
+                              display: inline-block;
+                          }
+                       }
+                    }
+                    .label {
+                        width: 60px;
+                        display: inline-block;
+                        color: #323336;
+                    }
+                    .value {
+                        width: 360px;
+                        display: inline-block;
+                        color: #888892;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+             }
+        }
+    }
+    
+}

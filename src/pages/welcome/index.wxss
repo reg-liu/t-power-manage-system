@@ -1,0 +1,30 @@
+.polling-element {
+  background: lightblue;
+  transition: opacity 3s ease;
+  /* 设置渐变动画 */
+  opacity: 0;
+  /* 默认完全可见 */
+}
+.fade-in {
+  opacity: 1;
+  /* 显示状态 */
+}
+.fade-out {
+  opacity: 0;
+  /* 隐藏状态 */
+  pointer-events: none;
+  /* 防止用户交互 */
+}
+.outer-container {
+  padding-bottom: 240px;
+}
+.title {
+  background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 180px;
+}
+.login-container {
+  width: 400px;
+  height: 400px;
+}

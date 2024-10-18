@@ -1,0 +1,76 @@
+.page-dev-setting {
+    padding: 56px 160px;
+    .module-wapper {
+        .title {
+            margin: 40px 0 20px 0;
+            font-size: 26px;
+            color: #010215;
+            line-height: 26px;
+        }
+        .key-wapper {
+            width: 100%;
+            background: #fff;
+            border-radius: 5px;
+            height: 150px;
+            padding: 30px 40px;
+            .key-item {
+                display: flex;
+                color: #2A2A2D;
+                font-size: 14px;
+                line-height: 42px;
+                font-weight: bold;
+                i {
+                    font-size: 16px;
+                    margin-left: 8px;
+                    &::before {
+                        color: #D2D2DB;
+                    }
+                }
+                .link {
+                    margin-left: 10px;
+                }
+                button {
+                    box-shadow: none;
+                }
+                .label {
+                    width: 105px;
+                    &::after {
+                        content: ':';
+                        width: 15px;
+                    }
+                }
+            }
+        }
+        &.domain-module {
+            position: relative;
+            .icon-add-new {
+                background: #1E50F5;
+                border-radius: 2px;
+                font-size: 20px;
+                padding: 18px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                z-index: 1;
+                border-radius: 50%;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .file-download-wrapper {
+                margin-top: 20px;
+                display: inline-block;
+                i {
+                    font-size: 16px;
+                    margin-left: 8px;
+                    &::before {
+                        color: #D2D2DB;
+                    }
+                }
+                button {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
