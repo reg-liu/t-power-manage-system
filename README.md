@@ -1,5 +1,51 @@
 T-Power Management System
 
-首页提示词
-帮我生成一张用户登录的WEB端后台管理系统的原型图，符合Ant Design Pro 组件库风格，需要支持谷歌及Apple账号，以及普通的邮箱和电话号码登录，还需要包含对于邮箱登录和手机号登录的注册功能，点击显示各自的注册模块，使用邮箱注册需要发送邮件进行邮箱验证，使用手机号码注册需要发送验证码进行验证，两种都需要输入密码及确认密码，以及用户名。导入react-google-login和react-apple-login，使用Google Sign-In API和Apple Sign In API实现快捷登录逻辑，可以唤起真实的登录模块，用单独的文件进行封装，client_id等信息可以用占位符代替，最终通过回调函数获取到谷歌和Apple用户信息，便于后续与后端联调调用登录接口。 登录模块的上方有一个T-POWER的空心单词作为名称标题，颜色是从浅蓝到深蓝的科技感渐变色。
-登录模块的下方由svg绘制的，动画由css控制，不使用外部依赖。主要注意svg的不要过小，此图形是作为背景展示的，能自适应PC端常规分辨率。由中间的矩形加上矩形周边的十多个不规则的L型的线路组成，矩形周边的L型线路均匀分布，线路之间不能交叉，显示成一个电流沿着线路移动的动画，动画线条是在线路上沿着折线移动。
+# 说明
+
+React + Reach Router + Typescript + Ant Design(Pro) + webpack4.0
+使用 React hook 进行开发
+
+本地开发Node Version 16.9.0
+
+# 项目运行
+
+```
+# 安装项目依赖
+yarn
+
+# 项目启动
+yarn start
+
+# 项目构建
+yarn build
+
+```
+
+# 业务介绍
+
+目录结构
+
+    ├── src                     // 源码目录
+    │   ├── api                 // api接口
+    │   ├── components          // 公共组件
+    │   ├── reducers            // 全局状态具体
+    │   ├── context             // 全局状态抽象
+    │   ├── pages               // 页面文件目录
+    │   │   └── index
+    │   │       ├── index.tsx   // 页面逻辑
+    │   │       ├── index.less  // 页面样式
+    │   ├── reducers            // 全局状态具体
+    │   ├── routes              // 路由定义
+    │   ├── util                // 常用工具类
+    │   ├── index.tsx           // 入口文件
+    │   ├── config.tsx          // 全局静态配置
+    │   ├── global.d.ts         // 全局TS类型声明
+    ├── .eslintignore           // eslint 忽略配置
+    ├── .gitignore              // git提交忽略配置
+    ├── babel.config.js         // babel 配置
+    ├── .prettierrc.json        // prettier 配置
+    ├── commitlint.config.js    // commitlint 配置
+    ├── tailwind.config.js      // tailwind 配置
+    ├── tsconfig.json           // Typescript 配置
+    ├── tslint.json             // Typescript 检测配置
+    └── webpack.config.js       // Webpack 配置
